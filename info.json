@@ -1,0 +1,39 @@
+
+special variables
+function variables
+'album' =
+{'album_type': 'single', 'artists': [{...}], 'available_markets': ['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', ...], 'external_urls': {'spotify': 'https://open.spotify.com/album/2mKKlq0CCG1EbSCDpwFc84'}, 'href': 'https://api.spotify.com/v1/albums/2mKKlq0CCG1EbSCDpwFc84', 'id': '2mKKlq0CCG1EbSCDpwFc84', 'images': [{...}, {...}, {...}], 'name': 'Los Fin De', 'release_date': '2024-09-12', 'release_date_precision': 'day', 'total_tracks': 1, 'type': 'album', 'uri': 'spotify:album:2mKKlq0CCG1EbSCDpwFc84'}
+'artists' =
+[{'external_urls': {...}, 'href': 'https://api.spotify.com/v1/artists/54seKvtsZauR1iauN0ptpo', 'id': '54seKvtsZauR1iauN0ptpo', 'name': 'De La Rose', 'type': 'artist', 'uri': 'spotify:artist:54seKvtsZauR1iauN0ptpo'}]
+'available_markets' =
+['AR', 'AU', 'AT', 'BE', 'BO', 'BR', 'BG', 'CA', 'CL', 'CO', 'CR', 'CY', 'CZ', 'DK', 'DO', 'DE', 'EC', 'EE', 'SV', 'FI', 'FR', 'GR', 'GT', 'HN', 'HK', 'HU', 'IS', 'IE', 'IT', 'LV', 'LT', 'LU', 'MY', 'MT', 'MX', 'NL', 'NZ', 'NI', 'NO', 'PA', 'PY', 'PE', 'PH', 'PL', 'PT', 'SG', 'SK', 'ES', 'SE', 'CH', 'TW', 'TR', 'UY', 'US', 'GB', 'AD', 'LI', 'MC', 'ID', ...]
+'disc_number' =
+1
+'duration_ms' =
+162226
+'explicit' =
+True
+'external_ids' =
+{'isrc': 'USWL12402575'}
+'external_urls' =
+{'spotify': 'https://open.spotify.com/track/0DfkS7yqoFniOUDOcpPVCR'}
+'href' =
+'https://api.spotify.com/v1/tracks/0DfkS7yqoFniOUDOcpPVCR'
+'id' =
+'0DfkS7yqoFniOUDOcpPVCR'
+'is_local' =
+False
+'name' =
+'Los Fin De'
+'popularity' =
+65
+'preview_url' =
+None
+'track_number' =
+1
+'type' =
+'track'
+'uri' =
+'spotify:track:0DfkS7yqoFniOUDOcpPVCR'
+len() =
+17
