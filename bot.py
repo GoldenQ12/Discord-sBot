@@ -57,6 +57,19 @@ bot = commands.Bot(command_prefix='/', intents=intents)
 # ? Playlist Dictionary => [int : Server, deque : Dict]
 playlist: Dict[int, deque] = ExternalDefs.load_playlist_from_json('playlists.json')
 
+# Add encoding handling for Spanish characters
+def ensure_unicode(text):
+    if isinstance(text, bytes):
+        return text.decode('utf-8')
+    return text
+
+# Update the playlist dictionary to ensure proper encoding
+for guild_id in playlist:
+    for song in playlist[guild_id]:
+        song['song_name'] = ensure_unicode(song['song_name'])
+        song['artist_name'] = ensure_unicode(song['artist_name'])
+        song['url'] = ensure_unicode(song['url'])
+
 current_track_start_time = {}
 now_playing_messages = {}
 external = ExternalDefs.initialize()
@@ -72,21 +85,32 @@ async def help_command(ctx):
     command_list = "\n".join([command.name for command in bot.application_commands])  # Create a list of command names
     await ctx.respond(f"Available commands:\n{command_list}")  # Respond with the list of commands
 
-@bot.slash_command(name='play')
+def display(): 
+    print(playlist)
+
+
+@bot.slash_command(name='musica')
 async def play(ctx, song: str, autoloop: bool = False):
+    thinking = await ctx.defer()  # Store the thinking message
+
     try:
+        guild_id = ctx.guild.id
+
+        if guild_id not in playlist:
+            playlist[guild_id] = deque()
+
         if ctx.author.voice:
             channel = ctx.author.voice.channel
             
-            # Check if bot is already connected
             if ctx.voice_client is None:
                 voice_client = await channel.connect()
             else:
                 voice_client = ctx.voice_client
         else:
-            await ctx.send("You are not connected to a voice channel.")
+            await ctx.followup.send("You are not connected to a voice channel.")
             return
 
+        # Add song to playlist first
         if song.startswith("https://open.spotify.com"):
             track_id = song.split('/')[-1].split('?')[0]
             track_info = sp.track(track_id)
@@ -104,36 +128,49 @@ async def play(ctx, song: str, autoloop: bool = False):
                 color=discord.Color.green()
             )
 
-            await ctx.send(embed=embed)
-            guild_id = ctx.guild.id
-            if guild_id not in playlist:
-                playlist[guild_id] = deque()
             
             playlist[guild_id].append({
-                "song_name" : track_name,
-                "artist_name" : artist_name,
-                "url" : song,
+                "song_name": track_name,
+                "artist_name": artist_name,
+                "url": song,
             })
-            
-            ExternalDefs.save_playlist_to_json(playlist, 'playlists.json')
 
-            if guild_id not in playlist or not playlist[guild_id]:
-                next_song = playlist[guild_id].popleft()
-                song = next_song['url']
-                playlist[guild_id].append(next_song)
-
-
-            search_query = f"{playlist[guild_id][-1]['song_name']} {playlist[guild_id][-1]['artist_name']}"
+            search_query = f"{track_name} {artist_name}"
             info = ytdl.extract_info(f"ytsearch:{search_query}", download=False)['entries'][0]
-            song = info['url']
+            song_url = info['url']
+
         else:
-            search_query = f"{song}"
-            info = ytdl.extract_info(f"ytsearch:{search_query}", download=False)['entries'][0]
-            song = info['url']
-
+            try:
+                search_query = song.encode('utf-8').decode('utf-8')
+            except UnicodeError:
+                search_query = song.encode('ascii', 'ignore').decode('ascii')
             
+            info = ytdl.extract_info(f"ytsearch:{search_query}", download=False)['entries'][0]
+            song_url = info['url']
+
+            playlist[guild_id].append({
+                "song_name": info['title'],
+                "artist_name": info['uploader'],
+                "url": song_url,
+            })
+
+            embed = discord.Embed(
+                description=f"**Added to queue: {info['title']}**",
+                color=discord.Color.green()
+            )
+
+            await ctx.followup.send(embed=embed)
+
+        if thinking:
+                    try:
+                        await thinking.delete()
+                    except:
+                        pass  # Ignore if we can't delete the message
+
+        ExternalDefs.save_playlist_to_json(playlist, 'playlists.json')
 
         def after_playing(err):
+            playlist = ExternalDefs.load_playlist_from_json('playlists.json')
             if err:
                 print(f"Error occurred: {err}")
                 asyncio.run_coroutine_threadsafe(
@@ -141,91 +178,69 @@ async def play(ctx, song: str, autoloop: bool = False):
                 )
             elif autoloop:
                 play_audio()
-            elif not autoloop and guild_id in playlist and playlist[guild_id]:
+                print("Autoloop")
+            elif not autoloop and guild_id in playlist and playlist[guild_id] and len(playlist[guild_id]) > 0:
                 play_audio()
-            
-            if not playlist[guild_id]:
-                asyncio.run_coroutine_threadsafe(
-                    ctx.send("No hay mas canciones disponibles"), bot.loop
-                )
+                print("No Autollop")
             else:
-                ExternalDefs.save_playlist_to_json(playlist, 'playlists.json')
-            
-                
+                asyncio.run_coroutine_threadsafe(
+                    ctx.send("No more songs in the playlist"), bot.loop
+                )
+
         def play_audio():
+            global playlist
+            playlist = ExternalDefs.load_playlist_from_json('playlists.json')
+            
             next_song = playlist[guild_id].popleft()
             playlist[guild_id].append(next_song)
 
             current_track_start_time[guild_id] = datetime.now()
             
-            # Fetch YouTube URL for the next song
-            search_query = f"{next_song['song_name']} {next_song['artist_name']}"
-            info = ytdl.extract_info(f"ytsearch:{search_query}", download=False)['entries'][0]
-            url = info['url']
-            
-            # Create and send new embed for the next song
-            async def update_now_playing():
-                elapsed = datetime.now() - current_track_start_time[guild_id]
-                seconds = int(elapsed.total_seconds())
-                minutes = seconds // 60
-                seconds = seconds % 60
-                
-                embed = discord.Embed(
-                    title="🎵 Reproduciendo",
-                    color=discord.Color.green()
-                )
-                embed.add_field(
-                    name="Tema", 
-                    value=next_song['song_name'],
-                    inline=True
-                )
-                embed.add_field(
-                    name="Artista", 
-                    value=next_song['artist_name'],
-                    inline=True
-                )
-                embed.add_field(
-                    name="Tiempo", 
-                    value=f"{minutes}:{seconds:02d}",
-                    inline=True
-                )
-                if track_info['album']['images']:
-                    embed.set_thumbnail(url=track_info['album']['images'][0]['url'])
+            try:
 
-                
-                # Create view with controls
-                view = MusicControls(bot, ctx)
-                
-                if guild_id not in now_playing_messages:
-                # First time sending the message
-                    message = await ctx.send(embed=embed, view=view)
-                    now_playing_messages[guild_id] = message
-                else:
-                    # Update existing message
-                    try:
-                        await now_playing_messages[guild_id].edit(embed=embed, view=view)
-                    except discord.NotFound:
-                        # If message was deleted, send a new one
-                        message = await ctx.send(embed=embed, view=view)
-                        now_playing_messages[guild_id] = message
-            
-            
-            voice_client.play(
-                discord.FFmpegPCMAudio(url, **ffmpeg_options),
-                after=after_playing
-            )
+                async def update_now_playing():
+                    embed = discord.Embed(
+                        title="🎵 Reproduciendo",
+                        color=discord.Color.green()
+                    )
+                    embed.add_field(
+                        name="Tema", 
+                        value=next_song['song_name'],
+                        inline=True
+                    )
+                    embed.add_field(
+                        name="Artista", 
+                        value=next_song['artist_name'],
+                        inline=True
+                    )
+                    
+                    # Add remaining songs count
+                    remaining = len(playlist[guild_id])
+                    embed.add_field(
+                        name="Queue",
+                        value=f"{remaining} songs remaining",
+                        inline=False
+                    )
+                    
+                    view = MusicControls(bot, ctx)
+                    await ctx.send(embed=embed, view=view)
+                    
 
-            async def update_time():
-                while voice_client.is_playing():
-                    await update_now_playing()
-                    await asyncio.sleep(1)
-            
-            asyncio.run_coroutine_threadsafe(update_time(), bot.loop)
+                    voice_client.play(
+                        discord.FFmpegPCMAudio(next_song['url'], **ffmpeg_options),
+                        after=after_playing
+                    )
+                asyncio.run_coroutine_threadsafe(update_now_playing(), bot.loop)
+                
+            except Exception as e:
+                print(f"Error occurred while fetching the song URL: {e}")
+                return
+
         play_audio()
 
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")
-
+    except Exception as e2:
+        print(f"An error occurred: {str(e2)}")
+        await ctx.followup.send("An error occurred while processing your request.")
 
 @bot.slash_command(name='leave')
 async def leave(ctx):
@@ -241,16 +256,20 @@ async def stop(ctx):
                 await ctx.respond("No hay ninguna cancion reproduciendo")
             else:
                 voice_client = ctx.voice_client
-                voice_client.stop()
+                await voice_client.disconnect()
+                playlist[ctx.guild.id] = deque()
+                ExternalDefs.save_playlist_to_json(playlist, 'playlists.json')
                 
 
 @bot.slash_command(name="playlist")
 async def show_playlist(ctx):  # Renamed the function to avoid naming conflict
+    global playlist
     guild_id = ctx.guild.id
-    if guild_id not in playlist or not playlist[guild_id]:
+    if guild_id not in playlist or len(playlist[guild_id]) == 0:
         await ctx.respond("Is Empty")
         return
     else:
+        playlist = ExternalDefs.load_playlist_from_json('playlists.json')
         current_playlist = playlist[guild_id]  # Use a different variable name
         playlist_text = "Playlist: \n"
         for i, song in enumerate(current_playlist, 1):

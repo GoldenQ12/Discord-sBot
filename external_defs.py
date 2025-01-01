@@ -16,7 +16,7 @@ class ExternalDefs():
 
     def load_playlist_from_json(file_path: str) -> Dict[int, deque]:
         try:
-            with open(file_path, 'r') as f:
+            with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 return {int(k): deque(v) for k, v in data.items()}
         except FileNotFoundError:
