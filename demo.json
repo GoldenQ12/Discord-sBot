@@ -1,0 +1,51 @@
+{
+    "1316898045597843526": {
+        "playlist": [
+            {
+                "song_artist": "Hello World",
+                "song_name" : "Hello",
+                "url" : "Https"
+            },
+            {
+                "song_artist": "Hello World",
+                "song_name" : "Hello",
+                "url" : "Https"
+            }
+        ],
+        "users" : [
+            {
+                "id" : "ID",
+                "cards" : [
+                    {
+                        "card_name" : "NAME",
+                        "card_number" : "NUMBER",
+                        "card_url" : "URL",
+                        "card_color" : " COLOR ( CONSTANT ) ",
+                        "card_count" : 20,
+                        "cost" : 10
+                    },
+                    {
+                        "card_name" : "NAME",
+                        "card_number" : "NUMBER",
+                        "card_url" : "URL",
+                        "card_color" : " COLOR ( CONSTANT ) ",
+                        "card_count" : 20,
+                        "cost" : 10
+                    }
+                ],
+                "cards_count" : 823748,
+                "level" : 320938,
+                "currency" : 132987
+            }
+        ],
+        "cards" : [
+            {
+                "card_name" : "NAME",
+                "card_number" : "NUMBER",
+                "card_url" : "URL",
+                "card_color" : " COLOR ( CONSTANT ) ",
+                "cost" : "COST"
+            }
+        ]
+    }
+}

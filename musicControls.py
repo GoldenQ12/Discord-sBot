@@ -7,74 +7,81 @@ class MusicControls(discord.ui.View):
         super().__init__(timeout=None)
         self.bot = bot
         self.ctx = ctx
-        
-        # Spotify button
-        spotify_button = discord.ui.Button(
-            style=discord.ButtonStyle.green,
-            emoji="🎵"
-        )
-        self.add_item(spotify_button)
-        
-        # Skip button
+
+
+
+        # Skip Button
         skip_button = discord.ui.Button(
             style=discord.ButtonStyle.gray,
-            emoji="⏭️",
+            emoji="⏩",
             custom_id="skip"
         )
         skip_button.callback = self.skip_callback
 
-        # Corrected pause button creation
-        pause_button = discord.ui.Button(
+        # Pause/Play button (inicialmente como pause)
+        self.toggle_button = discord.ui.Button(
             style=discord.ButtonStyle.gray,
-            emoji="⏯️",
+            emoji="⏸️",
             custom_id="pause"
         )
-        pause_button.callback = self.pause_callback
+        self.toggle_button.callback = self.toggle_callback
 
         self.add_item(skip_button)
-        self.add_item(pause_button)
+        self.add_item(self.toggle_button)
 
-    async def pause_callback(self, interaction: discord.Interaction):
+    async def toggle_callback(self, interaction: discord.Interaction):
+        await interaction.response.defer(ephemeral=True)
         if not interaction.user.voice:
-            await interaction.response.send_message("You need to be in a voice channel!", ephemeral=True)
             return
             
         if interaction.guild.voice_client:
             try:
-                if interaction.guild.voice_client.is_paused():
-                    await interaction.guild.voice_client.resume()  # Await the resume
-                    await interaction.response.send_message("Resumed playback!", ephemeral=True)
+                if self.toggle_button.custom_id == "pause":
+                    interaction.guild.voice_client.pause()
+                    self.toggle_button.style = discord.ButtonStyle.green
+                    self.toggle_button.emoji = "▶️"
+                    self.toggle_button.custom_id = "play"
                 else:
-                    await interaction.guild.voice_client.pause()  # Await the pause
-                    await interaction.response.send_message("Paused playback!", ephemeral=True)
+                    interaction.guild.voice_client.resume()
+                    self.toggle_button.style = discord.ButtonStyle.gray
+                    self.toggle_button.emoji = "⏸️"
+                    self.toggle_button.custom_id = "pause"
                 
+                await interaction.message.edit(view=self)
             except Exception as e:
-                print(f"Error updating JSON: {e}")
+                print(f"Error en toggle: {e}")
         else:
-            await interaction.response.send_message("Nothing is playing!", ephemeral=True)
+            return
 
     async def skip_callback(self, interaction: discord.Interaction):
+        await interaction.response.defer(ephemeral=True)
         if not interaction.user.voice:
-            await interaction.response.send_message("You need to be in a voice channel!", ephemeral=True)
+            await interaction.response.send_message("You need to be in a voice channel to skip a track.", ephemeral=True)
             return
             
         if interaction.guild.voice_client:
-            guild_id = str(interaction.guild.id)  # Use interaction.guild.id instead of interaction.guild_id
-            with open('playlists.json', 'r', encoding='utf-8') as f:
-                playlists_data = json.load(f)
+            guild_id = str(interaction.guild.id)
+            try:
+                with open('playlists.json', 'r', encoding='utf-8') as f:
+                    guild = json.load(f)
+            except FileNotFoundError:
+                await interaction.response.send_message("Playlists file not found.", ephemeral=True)
+                return
+            except json.JSONDecodeError:
+                await interaction.response.send_message("Error reading playlists file.", ephemeral=True)
+                return
             
-            # Remove the current song if guild exists in JSON
-            if guild_id in playlists_data and playlists_data[guild_id]:
-                playlists_data[guild_id].pop(0)  # Remove first song (dictionary with song details)
-                
-                # Save updated JSON
-                with open('playlists.json', 'w', encoding='utf-8') as f:
-                    json.dump(playlists_data, f)
-            
-            # Stop current track
-            interaction.guild.voice_client.stop()
-            await interaction.response.send_message("⏭️ Skipped!", ephemeral=True)
-                
-           
+            if guild_id in guild:
+                if guild[guild_id]['playlist']:
+                    guild[guild_id]['playlist'].pop(0)  # Remove the first song
+                    with open('playlists.json', 'w', encoding='utf-8') as f:
+                        json.dump(guild, f, indent=4, ensure_ascii=False)
+                    interaction.guild.voice_client.stop()
+                else:
+                    await interaction.response.send_message("The playlist is empty.", ephemeral=True)
+            else:
+                await interaction.response.send_message("Guild ID not found in playlists.", ephemeral=True)
         else:
-            await interaction.response.send_message("Nothing is playing!", ephemeral=True)
+            await interaction.response.send_message("There is no active voice client.", ephemeral=True)
+
+
