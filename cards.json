@@ -1,0 +1,702 @@
+[
+    {
+        "card_name": "Pidove",
+        "card_number": "#001",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Applin",
+        "card_number": "#002",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Mantyke",
+        "card_number": "#003",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Geodude",
+        "card_number": "#004",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Golem",
+        "card_number": "#005",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Quaxly",
+        "card_number": "#006",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Tapu-fini",
+        "card_number": "#007",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Budew",
+        "card_number": "#008",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Shieldon",
+        "card_number": "#009",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Smoliv",
+        "card_number": "#010",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Cursola",
+        "card_number": "#011",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Dialga",
+        "card_number": "#012",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Voltorb",
+        "card_number": "#013",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Steenee",
+        "card_number": "#014",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Wigglytuff",
+        "card_number": "#015",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Aegislash-shield",
+        "card_number": "#016",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Darmanitan-standard",
+        "card_number": "#017",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Illumise",
+        "card_number": "#018",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Aron",
+        "card_number": "#019",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Dragalge",
+        "card_number": "#020",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Braviary",
+        "card_number": "#021",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Horsea",
+        "card_number": "#022",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Rabsca",
+        "card_number": "#023",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Kyogre",
+        "card_number": "#024",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Tinkaton",
+        "card_number": "#025",
+        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "You should always do what you feel to do",
+        "card_number": "#026",
+        "card_url": "https://i.redd.it/6qai7l82yrae1.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "That's not how it was supposed to go",
+        "card_number": "#027",
+        "card_url": "https://i.redd.it/1r47rt12myae1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Dank means thanks in deutsche",
+        "card_number": "#028",
+        "card_url": "https://i.redd.it/ao5blp1521be1.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Me_irl",
+        "card_number": "#029",
+        "card_url": "https://i.redd.it/789uo1d339be1.gif",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Me🥶irl",
+        "card_number": "#030",
+        "card_url": "https://i.redd.it/e6lga3pf6cbe1.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "That's all i need ...",
+        "card_number": "#031",
+        "card_url": "https://i.redd.it/ex1p4ppevbbe1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Anyone remember this?",
+        "card_number": "#032",
+        "card_url": "https://i.redd.it/qi2jog20w6be1.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "I believe i can fly",
+        "card_number": "#033",
+        "card_url": "https://i.redd.it/ebmxdae538be1.gif",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "New year, new recipe.",
+        "card_number": "#034",
+        "card_url": "https://i.redd.it/5u2zyd8w8sae1.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "He's a lil' freaky",
+        "card_number": "#035",
+        "card_url": "https://i.redd.it/d1id9fdrj8be1.gif",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Me irl",
+        "card_number": "#036",
+        "card_url": "https://i.redd.it/b3fad0lo2xae1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Switchin' it up",
+        "card_number": "#037",
+        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Hope this is ok with r2",
+        "card_number": "#038",
+        "card_url": "https://i.redd.it/fcao6at1g6be1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "There is no wrong answer",
+        "card_number": "#039",
+        "card_url": "https://i.redd.it/54fac8uymbbe1.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Getting around censorship (cajun style)",
+        "card_number": "#040",
+        "card_url": "https://i.redd.it/aminnxpukabe1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "\"you bring dishonor to my name!\"",
+        "card_number": "#041",
+        "card_url": "https://i.redd.it/wbfd1cseh4be1.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "The art of pleasing is a bit fishy.",
+        "card_number": "#042",
+        "card_url": "https://i.redd.it/byql02yhpcbe1.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Chill bro stop spoiling ",
+        "card_number": "#043",
+        "card_url": "https://i.redd.it/ch660d8dl6be1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "If that's how it was meant to be then so be it! ",
+        "card_number": "#044",
+        "card_url": "https://i.redd.it/clgw4ltk5rae1.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "The sad truth about windows 11...",
+        "card_number": "#045",
+        "card_url": "https://i.redd.it/lcjnr272u4be1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Kind of a real question",
+        "card_number": "#046",
+        "card_url": "https://i.redd.it/hzyjifahb7be1.gif",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Proudly made with paint",
+        "card_number": "#047",
+        "card_url": "https://i.redd.it/m0v5lz7f9cbe1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Another one joining the legends in heaven",
+        "card_number": "#048",
+        "card_url": "https://i.redd.it/6vaizxhfe8be1.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "You see nothing",
+        "card_number": "#049",
+        "card_url": "https://i.redd.it/ip0z03zf13be1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Legends say that he still has three wishes to this day...",
+        "card_number": "#050",
+        "card_url": "https://i.redd.it/ar42jg3rb9be1.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 0",
+        "card_number": "#051",
+        "card_url": "https://cdn2.thecatapi.com/images/d07.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 1",
+        "card_number": "#052",
+        "card_url": "https://cdn2.thecatapi.com/images/z77nP6EHh.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 2",
+        "card_number": "#053",
+        "card_url": "https://cdn2.thecatapi.com/images/efr.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 3",
+        "card_number": "#054",
+        "card_url": "https://cdn2.thecatapi.com/images/8b6.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 4",
+        "card_number": "#055",
+        "card_url": "https://cdn2.thecatapi.com/images/ecu.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "CAT 5",
+        "card_number": "#056",
+        "card_url": "https://cdn2.thecatapi.com/images/CDhOtM-Ig.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 6",
+        "card_number": "#057",
+        "card_url": "https://cdn2.thecatapi.com/images/cev.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 7",
+        "card_number": "#058",
+        "card_url": "https://cdn2.thecatapi.com/images/4m5.jpg",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "CAT 8",
+        "card_number": "#059",
+        "card_url": "https://cdn2.thecatapi.com/images/qsGk4el-D.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 9",
+        "card_number": "#060",
+        "card_url": "https://cdn2.thecatapi.com/images/BjTEe8vY2.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 10",
+        "card_number": "#061",
+        "card_url": "https://cdn2.thecatapi.com/images/4jv.gif",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 11",
+        "card_number": "#062",
+        "card_url": "https://cdn2.thecatapi.com/images/9r8.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 12",
+        "card_number": "#063",
+        "card_url": "https://cdn2.thecatapi.com/images/83CUYAi3g.jpg",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "CAT 13",
+        "card_number": "#064",
+        "card_url": "https://cdn2.thecatapi.com/images/MTc5MzIwNQ.jpg",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "CAT 14",
+        "card_number": "#065",
+        "card_url": "https://cdn2.thecatapi.com/images/7pu.gif",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "CAT 15",
+        "card_number": "#066",
+        "card_url": "https://cdn2.thecatapi.com/images/24t.jpg",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "CAT 16",
+        "card_number": "#067",
+        "card_url": "https://cdn2.thecatapi.com/images/ebs.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 17",
+        "card_number": "#068",
+        "card_url": "https://cdn2.thecatapi.com/images/5kc.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 18",
+        "card_number": "#069",
+        "card_url": "https://cdn2.thecatapi.com/images/eg9.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 19",
+        "card_number": "#070",
+        "card_url": "https://cdn2.thecatapi.com/images/6u4.jpg",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "CAT 20",
+        "card_number": "#071",
+        "card_url": "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 21",
+        "card_number": "#072",
+        "card_url": "https://cdn2.thecatapi.com/images/bea.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "CAT 22",
+        "card_number": "#073",
+        "card_url": "https://cdn2.thecatapi.com/images/c4i.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "CAT 23",
+        "card_number": "#074",
+        "card_url": "https://cdn2.thecatapi.com/images/d0c.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "CAT 24",
+        "card_number": "#075",
+        "card_url": "https://cdn2.thecatapi.com/images/OOD3VXAQn.jpg",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Ryouta Watari",
+        "card_number": "#076",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/69405-IpsjziJkHrHj.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Kousei Arima",
+        "card_number": "#077",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b69407-eyIvpsFPeARS.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Nagi Aiza",
+        "card_number": "#078",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b157244-Hlp5gH8ia6GN.jpg",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Takeshi Aiza",
+        "card_number": "#079",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/85839-lYYIkvS9I7wS.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Nao Kashiwagi",
+        "card_number": "#080",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/81725-c42gacJ6ftGR.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Zenitsu Agatsuma",
+        "card_number": "#081",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Tanjirou Kamado",
+        "card_number": "#082",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Giyuu Tomioka",
+        "card_number": "#083",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Gyoumei Himejima",
+        "card_number": "#084",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137778-H4Uzb9cSCvZ6.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Susamaru",
+        "card_number": "#085",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b138810-1d6mUy8lzr8K.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Tsumiki Fushiguro",
+        "card_number": "#086",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Maki Zenin",
+        "card_number": "#087",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Panda",
+        "card_number": "#088",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Junpei Yoshino",
+        "card_number": "#089",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Masamichi Yaga",
+        "card_number": "#090",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Áki",
+        "card_number": "#091",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b156508-r7u8QLyKbr7B.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Ari",
+        "card_number": "#092",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b140357-4RwRiP5fFFhl.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Leif Erikson",
+        "card_number": "#093",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19486-XRzBNqoLb5Le.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Bjorn",
+        "card_number": "#094",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19485-GqL2A0NKp3Tf.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Willibald",
+        "card_number": "#095",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b20704-N5pntGOae3F4.jpg",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "Hannes",
+        "card_number": "#096",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b46492-5kRaMLDCVD0B.jpg",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    },
+    {
+        "card_name": "Keiji",
+        "card_number": "#097",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n71455-Mvk4Pz3tWUuN.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Moses",
+        "card_number": "#098",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b84309-ntK7TKP6RkPe.png",
+        "card_color": "GREEN",
+        "cost": 750
+    },
+    {
+        "card_name": "Gelgar",
+        "card_number": "#099",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n72511-jDEdtgvMh5wM.jpg",
+        "card_color": "PURPLE",
+        "cost": 500
+    },
+    {
+        "card_name": "Franz Kefka",
+        "card_number": "#100",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b84317-mIg4hGXJKhQt.png",
+        "card_color": "RED",
+        "cost": 50
+    }
+]

@@ -62,7 +62,7 @@ class MusicControls(discord.ui.View):
         if interaction.guild.voice_client:
             guild_id = str(interaction.guild.id)
             try:
-                with open('playlists.json', 'r', encoding='utf-8') as f:
+                with open('data.json', 'r', encoding='utf-8') as f:
                     guild = json.load(f)
             except FileNotFoundError:
                 await interaction.response.send_message("Playlists file not found.", ephemeral=True)

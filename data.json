@@ -187,11 +187,43 @@
                         "card_color": "BLUE",
                         "cost": 250,
                         "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 20",
+                        "card_number": "#071",
+                        "card_url": "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 16",
+                        "card_number": "#067",
+                        "card_url": "https://cdn2.thecatapi.com/images/ebs.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Tapu-fini",
+                        "card_number": "#007",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Tanjirou Kamado",
+                        "card_number": "#082",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
                     }
                 ],
-                "cards_count": 24,
+                "cards_count": 28,
                 "level": 1,
-                "currency": 935387
+                "currency": 934037
             }
         ],
         "cards": [

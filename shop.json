@@ -1,0 +1,37 @@
+[
+    {
+        "card_name": "Tanjirou Kamado",
+        "card_number": "#082",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 24",
+        "card_number": "#075",
+        "card_url": "https://cdn2.thecatapi.com/images/OOD3VXAQn.jpg",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "The sad truth about windows 11...",
+        "card_number": "#045",
+        "card_url": "https://i.redd.it/lcjnr272u4be1.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Me🥶irl",
+        "card_number": "#030",
+        "card_url": "https://i.redd.it/e6lga3pf6cbe1.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "You see nothing",
+        "card_number": "#049",
+        "card_url": "https://i.redd.it/ip0z03zf13be1.png",
+        "card_color": "RAINBOW",
+        "cost": 1000
+    }
+]
