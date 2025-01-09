@@ -27,33 +27,61 @@ class Paginator:
 
     def get_embed(self):
         cards = ExternalDefs.load_cards('cards.json')
-        card_embed = discord.Embed(title="Card List")
         start = self.current_page * self.items_per_page
         end = start + self.items_per_page
         user_card_names = [card['card_name'] for card in self.user_cards]
+        user_card_count = {card['card_name']: card['card_count'] for card in self.user_cards}  # Create a dictionary for easy access
+        card_embed = discord.Embed(title=f"Card List\nTotal Cards: x{sum(user_card_count.values())}", colour=discord.Colour.brand_green())
+
 
         field_count = 0  # Initialize a counter for the number of fields
+        embed_placeholder_count = 0
+        embed_card_count = 0
+
+        obtained_cards = []
+        placeholder_cards = []
+
 
         for card in cards[start:end]:
-            for user_card in self.user_cards:
-                if field_count >= 25:  # Check if the field count exceeds the limit
-                    break  # Stop adding fields if limit is reached
+            if (embed_placeholder_count + embed_card_count) >= 25:
+                break
+            if card['card_name'] in user_card_names:
+                embed_card_count += 1
+                card["card_count"] = user_card_count[card['card_name']]
+                card["order"] = int(card['card_number'].lstrip('#'))
+                obtained_cards.append(card)
+            else:
+                embed_placeholder_count += 1
+                placeholder_card = {
+                    "card_name": "???",
+                    "card_number": card['card_number'],
+                    "card_url": "???",
+                    "card_color": "???",
+                    "card_count": 0,
+                    "cost": card['cost'],
+                    "order" : int(card['card_number'].lstrip('#'))
+                    
+                }
+                placeholder_cards.append(placeholder_card)
 
-                if card['card_name'] in user_card_names:
-                    card_embed.add_field(
-                        name=f"{user_card['card_name']} - {user_card['card_number']}",
-                        value=f"Cost: {user_card['cost']} coins\n[View Card]({user_card['card_url']})\nx{user_card['card_count']}",
-                        inline=True
-                    )
-                    field_count += 1  # Increment the field count
-                else:
-                    card_embed.add_field(
-                        name="???",  # Placeholder for cards the user doesn't have
-                        value="This card is not owned by you.",
-                        inline=True
-                    )
-                    field_count += 1  # Increment the field count
+        combined_cards_dict = placeholder_cards + obtained_cards
 
+        sorted_dict = sorted(combined_cards_dict, key=lambda x: x["order"])
+
+        for card in sorted_dict:
+            if card['card_url'] == "???":
+                card_embed.add_field(
+                    name=f"{card['card_name']} - {card['card_number']}",
+                    value=f"Cost: {card['cost']} coins",
+                    inline=True
+                )
+            else:
+                card_embed.add_field(
+                    name=f"{card['card_name']} - {card['card_number']}",
+                    value=f"Cost: {card['cost']} coins\n[View Card]({card['card_url']})\nx{card['card_count']}",
+                    inline=True
+                )
+            
         return card_embed
 
     def get_view(self):

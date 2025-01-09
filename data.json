@@ -162,7 +162,7 @@
                         "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 2
                     },
                     {
                         "card_name": "New year, new recipe.",
@@ -210,7 +210,7 @@
                         "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
                         "card_color": "RED",
                         "cost": 50,
-                        "card_count": 1
+                        "card_count": 2
                     },
                     {
                         "card_name": "Tanjirou Kamado",
@@ -219,11 +219,171 @@
                         "card_color": "BLUE",
                         "cost": 250,
                         "card_count": 1
+                    },
+                    {
+                        "card_name": "Smoliv",
+                        "card_number": "#010",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Applin",
+                        "card_number": "#002",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Bjorn",
+                        "card_number": "#094",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19485-GqL2A0NKp3Tf.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 2",
+                        "card_number": "#053",
+                        "card_url": "https://cdn2.thecatapi.com/images/efr.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "The sad truth about windows 11...",
+                        "card_number": "#045",
+                        "card_url": "https://i.redd.it/lcjnr272u4be1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Gyoumei Himejima",
+                        "card_number": "#084",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137778-H4Uzb9cSCvZ6.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "Quaxly",
+                        "card_number": "#006",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "Darmanitan-standard",
+                        "card_number": "#017",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Golem",
+                        "card_number": "#005",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "You see nothing",
+                        "card_number": "#049",
+                        "card_url": "https://i.redd.it/ip0z03zf13be1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 17",
+                        "card_number": "#068",
+                        "card_url": "https://cdn2.thecatapi.com/images/5kc.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Kind of a real question",
+                        "card_number": "#046",
+                        "card_url": "https://i.redd.it/hzyjifahb7be1.gif",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Dank means thanks in deutsche",
+                        "card_number": "#028",
+                        "card_url": "https://i.redd.it/ao5blp1521be1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Gelgar",
+                        "card_number": "#099",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n72511-jDEdtgvMh5wM.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "That's not how it was supposed to go",
+                        "card_number": "#027",
+                        "card_url": "https://i.redd.it/1r47rt12myae1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Mantyke",
+                        "card_number": "#003",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Braviary",
+                        "card_number": "#021",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 13",
+                        "card_number": "#064",
+                        "card_url": "https://cdn2.thecatapi.com/images/MTc5MzIwNQ.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 5",
+                        "card_number": "#056",
+                        "card_url": "https://cdn2.thecatapi.com/images/CDhOtM-Ig.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Switchin' it up",
+                        "card_number": "#037",
+                        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
                     }
                 ],
-                "cards_count": 28,
+                "cards_count": 52,
                 "level": 1,
-                "currency": 934037
+                "currency": 931887
             }
         ],
         "cards": [

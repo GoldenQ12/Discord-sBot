@@ -1,30 +1,30 @@
 [
     {
-        "card_name": "Dialga",
-        "card_number": "#012",
-        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
-        "card_color": "BLUE",
-        "cost": 250
-    },
-    {
-        "card_name": "CAT 9",
-        "card_number": "#060",
-        "card_url": "https://cdn2.thecatapi.com/images/BjTEe8vY2.jpg",
-        "card_color": "BLUE",
-        "cost": 250
-    },
-    {
-        "card_name": "CAT 4",
-        "card_number": "#055",
-        "card_url": "https://cdn2.thecatapi.com/images/ecu.jpg",
+        "card_name": "CAT 23",
+        "card_number": "#074",
+        "card_url": "https://cdn2.thecatapi.com/images/d0c.jpg",
         "card_color": "RAINBOW",
         "cost": 1000
     },
     {
-        "card_name": "CAT 13",
-        "card_number": "#064",
-        "card_url": "https://cdn2.thecatapi.com/images/MTc5MzIwNQ.jpg",
-        "card_color": "PURPLE",
-        "cost": 500
+        "card_name": "Masamichi Yaga",
+        "card_number": "#090",
+        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "CAT 11",
+        "card_number": "#062",
+        "card_url": "https://cdn2.thecatapi.com/images/9r8.jpg",
+        "card_color": "BLUE",
+        "cost": 250
+    },
+    {
+        "card_name": "Switchin' it up",
+        "card_number": "#037",
+        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
+        "card_color": "BLUE",
+        "cost": 250
     }
 ]

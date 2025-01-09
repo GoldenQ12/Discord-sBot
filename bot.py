@@ -405,23 +405,20 @@ async def play(ctx, song: str):
 async def cardLoad(ctx):
     global guild
     try:
-        # Load all cards
+    
         cards = ExternalDefs.load_cards('cards.json')
-        print(f"Loaded cards: {cards}")  # Debugging output
 
-        user_cards = []  # Initialize user_cards to store user's cards
+        user_cards = []  
 
-        user_found = False  # Flag to check if user is found
+        user_found = False 
 
-        # Find the user's cards
+    
         for user in guild[str(ctx.guild.id)]['users']:
-            print(f"Checking user: {user}")  # Debugging output
-            if str(user['id']) == str(ctx.author.id):  # Ensure both IDs are strings for comparison
-                user_cards = user['cards']  # Get user's cards
-                user_found = True  # Set flag to true
+            if str(user['id']) == str(ctx.author.id):  
+                user_cards = user['cards'] 
+                user_found = True 
                 break
 
-        # If user has no cards, inform them
         if not user_found:
             await ctx.respond("No se encontró el usuario en la colección.")
             return
@@ -430,12 +427,10 @@ async def cardLoad(ctx):
             await ctx.respond("No tienes cartas en tu colección.")
             return
 
-        # Create paginator for user's cards
-        paginator = Paginator(cards=cards, user_cards=user_cards, guild=guild, items_per_page=9)
-        embed = paginator.get_embed()  # Create embed for pagination
-        view = paginator.get_view()  # Create view for pagination buttons
+        paginator = Paginator(cards=cards, user_cards=user_cards, guild=guild, items_per_page=24)
+        embed = paginator.get_embed()  
+        view = paginator.get_view()
 
-        # Respond with the embed and view
         await ctx.respond(embed=embed, view=view)
 
     except Exception as e:
