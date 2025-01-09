@@ -28,6 +28,7 @@ sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(SPOTIFY
 intents = discord.Intents.default()
 intents.message_content = True  
 intents.members = True
+intents.emojis = True
 
 ytdl_format_options = {
     'format': 'bestaudio/best',
@@ -98,7 +99,7 @@ async def load_users():
                     guild[guild_id]['users'][users_id.index(member.id)]['cards_count'] = total_cards_count  # Update cards_count
         
         ExternalDefs.save_playlist_to_json(guild, 'data.json')
-        await asyncio.sleep(60)
+        await asyncio.sleep(2)
         
 
 
@@ -111,20 +112,19 @@ async def coins_increase():
             for user in users:
                 user['currency'] += 1
                 ExternalDefs.save_playlist_to_json(guild, 'data.json')
-        await asyncio.sleep(20) 
+        await asyncio.sleep(2) 
         #TODO DETERMINE HOW MANY TIME SHALL BE FOR THE COINS TO INCREASE ( MATHS RESOLVE ) 
 
 async def shop_setup():
     global guild
     day = 86400
-    await asyncio.sleep(day)
     await create_shop()
 
 async def create_shop():
     cards = ExternalDefs.load_cards('cards.json')
     shop = []
     counter = 0
-    while counter < 5:
+    while counter < 4:
         random_number = random.randint(0, len(cards) - 1)
         if cards[random_number] not in shop:
             shop.append(cards[random_number])
@@ -139,103 +139,93 @@ async def on_ready():
     await shop_setup()
     await coins_increase()
 
-@bot.slash_command(name="help", description="Lista todos los comandos disponibles.")
-async def help_command(ctx):
-    command_list = "\n".join([command.name for command in bot.application_commands])
-    await ctx.respond(f"Comandos disponibles:\n{command_list}")
-
-@bot.slash_command(name="addcard")
-async def addCard(ctx):
-    message = """
-    **Bold Text**
-    *Italic Text*
-    [Link to Google](https://www.google.com)
-    
-    Here is a list:
-    - Item 1
-    - Item 2
-    - Item 3
-    """
-    await ctx.send(message)
-
-import discord
 
 
 # * VIEWS ( GENERAL )
 class ShopView(discord.ui.View):
-    def __init__(self):
-        super().__init__()
-        self.shop = ExternalDefs.load_cards('shop.json')
-        self.create_buttons()
+        def __init__(self, embed):
+            super().__init__()
+            self.shop = ExternalDefs.load_cards('shop.json')
+            self.create_buttons()
+            self.embed = embed
 
-    def create_buttons(self):
-        for counter, card in enumerate(self.shop):
+        def create_buttons(self):
+            for counter, card in enumerate(self.shop):
+                button = discord.ui.Button(
+                    label=f"{card['card_name']} - {card['cost']} coins",
+                    style=discord.ButtonStyle.green,
+                    custom_id=f"buy_{card['card_number']}",
+                    row=counter # Adjust this number based on how many buttons you want per row
+                )
+                button.callback = self.button_callback  # Set the callback for the button   
+                self.add_item(button)
             button = discord.ui.Button(
-                label=f"{card['card_name']} - {card['cost']} coins",
-                style=discord.ButtonStyle.green,
-                custom_id=f"buy_{card['card_number']}",
-                row=counter # Adjust this number based on how many buttons you want per row
+                label=f"Back",
+                style=discord.ButtonStyle.red,
+                custom_id=f"buy_back",
+                row=4
             )
-            button.callback = self.button_callback  # Set the callback for the button
+            button.callback = self.button_callback
             self.add_item(button)
 
-    async def button_callback(self, interaction: discord.Interaction):
-        # Get the card number from the custom_id
-        card_number = interaction.data['custom_id'].split('_')[1]
-        card = next((c for c in self.shop if c['card_number'] == card_number), None)
+        async def button_callback(self, interaction: discord.Interaction):
+            # Get the card number from the custom_id
+            card_number = interaction.data['custom_id'].split('_')[1]
+            card = next((c for c in self.shop if c['card_number'] == card_number), None)
 
-        if card:
-            # Create an embed to confirm the purchase
-            embed = discord.Embed(
-                title="Confirm Purchase",
-                description=f"Do you really want to buy **{card['card_name']}** for **{card['cost']} coins**?",
-                color=discord.Color.blue()
+            if card:
+                # Create an embed to confirm the purchase
+                embed = discord.Embed(
+                    title="Confirm Purchase",
+                    description=f"Do you really want to buy **{card['card_name']}** for **{card['cost']} coins**?",
+                    color=discord.Color.blue()
 
-            )
-            embed.set_image(url=card['card_url'])
-            embed.set_footer(text="Click the buttons below to confirm or cancel.")
+                )
+                embed.set_image(url=card['card_url'])
+                embed.set_footer(text="Click the buttons below to confirm or cancel.")
 
-            confirm_view = ConfirmPurchaseView(card)
-            await interaction.response.send_message(embed=embed, view=confirm_view, ephemeral=True)
-        else:
-            await interaction.response.send_message("Error: Card not found.", ephemeral=True)  # Handle case where card is not found
+                confirm_view = ConfirmPurchaseView(card)
+                await interaction.response.send_message(embed=embed, view=confirm_view, ephemeral=True)
+            else:
+                await interaction.response.send_message(embed=self.embed, view=GamesView(self.embed))  # Handle case where card is not found
 
 class ConfirmPurchaseView(discord.ui.View):
-    def __init__(self, card):
-        super().__init__()
-        self.card = card  # Store the card data
+        def __init__(self, card):
+            super().__init__()
+            self.card = card  # Store the card data
 
-    @discord.ui.button(label="Confirm", style=discord.ButtonStyle.green)
-    async def confirm_button(self, button: discord.ui.Button, interaction: discord.Interaction):
-        # Handle the purchase logic here
-        global guild  # Ensure guild is accessible
-        user_id = interaction.user.id
-        guild_id = str(interaction.guild.id)
+        @discord.ui.button(label="Confirm", style=discord.ButtonStyle.green)
+        async def confirm_button(self, button: discord.ui.Button, interaction: discord.Interaction):
+            # Handle the purchase logic here
+            global guild  # Ensure guild is accessible
+            user_id = interaction.user.id
+            guild_id = str(interaction.guild.id)
 
-        # Check if user has enough currency
-        for user in guild[guild_id]['users']:
-            if user['id'] == user_id:
-                if user['currency'] >= self.card['cost']:
-                    user['currency'] -= self.card['cost']  # Deduct cost
-                    self.card["card_count"] = 1
-                    user['cards'].append(self.card)  # Add card to user's collection
-                    ExternalDefs.save_playlist_to_json(guild, 'data.json')  # Save changes
-                    await interaction.response.send_message(f"Has comprado **{self.card['card_name']}**!", ephemeral=True)
-                    self.stop()  # Stop the view
-                    return
-                else:
-                    await interaction.response.send_message("No tienes suficiente dinero para comprar esta carta.", ephemeral=True)
-                    self.stop()  # Stop the view
-                    return
+            # Check if user has enough currency
+            for user in guild[guild_id]['users']:
+                if user['id'] == user_id:
+                    if user['currency'] >= self.card['cost']:
+                        user['currency'] -= self.card['cost']  # Deduct cost
+                        self.card["card_count"] = 1
+                        user['cards'].append(self.card)  # Add card to user's collection
+                        ExternalDefs.save_playlist_to_json(guild, 'data.json')  # Save changes
+                        await interaction.response.send_message(f"Has comprado **{self.card['card_name']}**!", ephemeral=True)
+                        self.stop()  # Stop the view
+                        return
+                    else:
+                        await interaction.response.send_message("No tienes suficiente dinero para comprar esta carta.", ephemeral=True)
+                        self.stop()  # Stop the view
+                        return
 
-    @discord.ui.button(label="Back", style=discord.ButtonStyle.red)
-    async def cancel_button(self, button: discord.ui.Button, interaction: discord.Interaction):
-        self.stop()  # Stop the view
-        await interaction.response.send_message(view=ShopView(), ephemeral=True)
+        @discord.ui.button(label="Back", style=discord.ButtonStyle.red)
+        async def cancel_button(self, button: discord.ui.Button, interaction: discord.Interaction):
+            self.stop()  # Stop the view
+            await interaction.response.send_message(view=ShopView(), ephemeral=True)
 
 class GamesView(discord.ui.View):
-    def __init__(self):
+    def __init__(self, embed):
         super().__init__(timeout=None)  # Persistent view
+        self.embed = embed
 
     @discord.ui.button(label="Tienda", style=discord.ButtonStyle.primary, custom_id="shop")
     async def shop_button(self, button: discord.ui.Button, interaction: discord.Interaction):
@@ -248,7 +238,7 @@ class GamesView(discord.ui.View):
 
         await interaction.response.edit_message(
             embed=embed,
-            view=ShopView(),
+            view=ShopView(self.embed),
         )
 
     @discord.ui.button(label="Ruleta - 100 🪙", style=discord.ButtonStyle.green, custom_id="wheel")
@@ -303,6 +293,10 @@ class GamesView(discord.ui.View):
 
 
 
+@bot.slash_command(name="help", description="Lista todos los comandos disponibles.")
+async def help_command(ctx):
+    command_list = "\n".join([command.name for command in bot.application_commands])
+    await ctx.respond(f"Comandos disponibles:\n{command_list}")
 
 @bot.slash_command(name="tienda", description="Una tienda donde podrás comprar cartas con tu dinero")
 async def shop(ctx):
@@ -326,15 +320,14 @@ async def shop(ctx):
 
 
 
-    await ctx.respond(embed=embed, view=GamesView())
+    await ctx.respond(embed=embed, view=GamesView(embed))
 
-@bot.slash_command(name='musica')
+@bot.slash_command(name="musica")
 async def play(ctx, song: str):
     await ctx.defer()
     try:
         guild_id = ctx.guild.id
 
-        print(f"1.- {guild[str(guild_id)]}")
         
         # Ensure the playlist for the guild is initialized
         for num in guild :
@@ -408,24 +401,9 @@ async def play(ctx, song: str):
         await ctx.followup.send(f"Ocurrió un error al procesar tu solicitud: {str(e)}")  # Send error message to user
 
 
-
-
 @bot.slash_command(name="cartas")
-async def cards(ctx):
-    import discord
-from discord.ext import commands
-from external_defs import ExternalDefs
-
-# Assuming the guild variable is defined globally
-guild = {}
-
-# Define your bot
-bot = commands.Bot(command_prefix="!")
-
-@bot.slash_command(name="cartas")
-async def cards(ctx):
+async def cardLoad(ctx):
     global guild
-    guild = ExternalDefs.load_playlist_from_json('data.json')
     try:
         # Load all cards
         cards = ExternalDefs.load_cards('cards.json')
@@ -505,14 +483,10 @@ async def show_playlist(ctx):  # Renamed the function to avoid naming conflict
         await ctx.respond(playlist_text)
 
 
-@bot.event
-async def on_command_error(ctx, error):
-    if isinstance(error, commands.CommandInvokeError):
-        await ctx.send("Parece que algo salió mal. Este mensaje solo es visible para ti.")
+
 
 def play_next_song(ctx, voice_client, guild_id):
 
-    
     try:
         
         next_song = guild[str(guild_id)]['playlist'][0]  # Peek at the next song without removing
@@ -551,10 +525,6 @@ def play_next_song(ctx, voice_client, guild_id):
 
     except Exception as e:
         print(f"Error in play_next_song: {e}")
-
-
-
-
 
 
 
