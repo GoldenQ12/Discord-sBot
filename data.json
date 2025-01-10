@@ -23,15 +23,17 @@
                     }
                 ],
                 "cards_count": 823748,
-                "level": 320938,
-                "currency": 134084
+                "level": 320945,
+                "currency": 136446,
+                "experience": 69
             },
             {
                 "id": 1316886745383702558,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 1097
+                "level": 30,
+                "currency": 3459,
+                "experience": 158
             },
             {
                 "id": 457544339552337932,
@@ -50,7 +52,7 @@
                         "card_url": "https://i.redd.it/6efrrkrywrae1.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 0
+                        "card_count": 7
                     },
                     {
                         "card_name": "Not stonks",
@@ -82,7 +84,7 @@
                         "card_url": "https://i.redd.it/b3fad0lo2xae1.png",
                         "card_color": "RAINBOW",
                         "cost": 1000,
-                        "card_count": 2
+                        "card_count": 6
                     },
                     {
                         "card_name": "Hope this is ok with r2",
@@ -90,7 +92,7 @@
                         "card_url": "https://i.redd.it/fcao6at1g6be1.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 6
                     },
                     {
                         "card_name": "Nagi Aiza",
@@ -98,7 +100,7 @@
                         "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b157244-Hlp5gH8ia6GN.jpg",
                         "card_color": "PURPLE",
                         "cost": 500,
-                        "card_count": 1
+                        "card_count": 8
                     },
                     {
                         "card_name": "Zenitsu Agatsuma",
@@ -106,7 +108,7 @@
                         "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
                         "card_color": "PURPLE",
                         "cost": 500,
-                        "card_count": 1
+                        "card_count": 11
                     },
                     {
                         "card_name": "Áki",
@@ -114,7 +116,7 @@
                         "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b156508-r7u8QLyKbr7B.jpg",
                         "card_color": "RAINBOW",
                         "cost": 1000,
-                        "card_count": 1
+                        "card_count": 13
                     },
                     {
                         "card_name": "Pidove",
@@ -122,7 +124,7 @@
                         "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
                         "card_color": "GREEN",
                         "cost": 750,
-                        "card_count": 1
+                        "card_count": 13
                     },
                     {
                         "card_name": "Rabsca",
@@ -130,7 +132,7 @@
                         "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
                         "card_color": "PURPLE",
                         "cost": 500,
-                        "card_count": 1
+                        "card_count": 3
                     },
                     {
                         "card_name": "CAT 10",
@@ -138,7 +140,7 @@
                         "card_url": "https://cdn2.thecatapi.com/images/4jv.gif",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 9
                     },
                     {
                         "card_name": "Legends say that he still has three wishes to this day...",
@@ -146,7 +148,7 @@
                         "card_url": "https://i.redd.it/ar42jg3rb9be1.png",
                         "card_color": "GREEN",
                         "cost": 750,
-                        "card_count": 1
+                        "card_count": 6
                     },
                     {
                         "card_name": "Nao Kashiwagi",
@@ -154,7 +156,7 @@
                         "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/81725-c42gacJ6ftGR.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 8
                     },
                     {
                         "card_name": "Dialga",
@@ -162,7 +164,7 @@
                         "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 2
+                        "card_count": 19
                     },
                     {
                         "card_name": "New year, new recipe.",
@@ -170,7 +172,7 @@
                         "card_url": "https://i.redd.it/5u2zyd8w8sae1.png",
                         "card_color": "PURPLE",
                         "cost": 500,
-                        "card_count": 1
+                        "card_count": 10
                     },
                     {
                         "card_name": "Getting around censorship (cajun style)",
@@ -178,7 +180,199 @@
                         "card_url": "https://i.redd.it/aminnxpukabe1.png",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "Switchin' it up",
+                        "card_number": "#037",
+                        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "CAT 20",
+                        "card_number": "#071",
+                        "card_url": "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "CAT 16",
+                        "card_number": "#067",
+                        "card_url": "https://cdn2.thecatapi.com/images/ebs.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 11
+                    },
+                    {
+                        "card_name": "Tapu-fini",
+                        "card_number": "#007",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Tanjirou Kamado",
+                        "card_number": "#082",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 13
+                    },
+                    {
+                        "card_name": "Smoliv",
+                        "card_number": "#010",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Applin",
+                        "card_number": "#002",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Bjorn",
+                        "card_number": "#094",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19485-GqL2A0NKp3Tf.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 9
+                    },
+                    {
+                        "card_name": "CAT 2",
+                        "card_number": "#053",
+                        "card_url": "https://cdn2.thecatapi.com/images/efr.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 3
+                    },
+                    {
+                        "card_name": "The sad truth about windows 11...",
+                        "card_number": "#045",
+                        "card_url": "https://i.redd.it/lcjnr272u4be1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Gyoumei Himejima",
+                        "card_number": "#084",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137778-H4Uzb9cSCvZ6.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 14
+                    },
+                    {
+                        "card_name": "Quaxly",
+                        "card_number": "#006",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Darmanitan-standard",
+                        "card_number": "#017",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Golem",
+                        "card_number": "#005",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 9
+                    },
+                    {
+                        "card_name": "You see nothing",
+                        "card_number": "#049",
+                        "card_url": "https://i.redd.it/ip0z03zf13be1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "CAT 17",
+                        "card_number": "#068",
+                        "card_url": "https://cdn2.thecatapi.com/images/5kc.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 9
+                    },
+                    {
+                        "card_name": "Kind of a real question",
+                        "card_number": "#046",
+                        "card_url": "https://i.redd.it/hzyjifahb7be1.gif",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "Dank means thanks in deutsche",
+                        "card_number": "#028",
+                        "card_url": "https://i.redd.it/ao5blp1521be1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Gelgar",
+                        "card_number": "#099",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n72511-jDEdtgvMh5wM.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 12
+                    },
+                    {
+                        "card_name": "That's not how it was supposed to go",
+                        "card_number": "#027",
+                        "card_url": "https://i.redd.it/1r47rt12myae1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Mantyke",
+                        "card_number": "#003",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Braviary",
+                        "card_number": "#021",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "CAT 13",
+                        "card_number": "#064",
+                        "card_url": "https://cdn2.thecatapi.com/images/MTc5MzIwNQ.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "CAT 5",
+                        "card_number": "#056",
+                        "card_url": "https://cdn2.thecatapi.com/images/CDhOtM-Ig.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 9
                     },
                     {
                         "card_name": "Switchin' it up",
@@ -189,68 +383,44 @@
                         "card_count": 1
                     },
                     {
-                        "card_name": "CAT 20",
-                        "card_number": "#071",
-                        "card_url": "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
+                        "card_name": "CAT 18",
+                        "card_number": "#069",
+                        "card_url": "https://cdn2.thecatapi.com/images/eg9.jpg",
                         "card_color": "BLUE",
                         "cost": 250,
-                        "card_count": 1
+                        "card_count": 7
                     },
                     {
-                        "card_name": "CAT 16",
-                        "card_number": "#067",
-                        "card_url": "https://cdn2.thecatapi.com/images/ebs.jpg",
-                        "card_color": "GREEN",
-                        "cost": 750,
-                        "card_count": 1
+                        "card_name": "Steenee",
+                        "card_number": "#014",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 4
                     },
                     {
-                        "card_name": "Tapu-fini",
-                        "card_number": "#007",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+                        "card_name": "Susamaru",
+                        "card_number": "#085",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b138810-1d6mUy8lzr8K.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Willibald",
+                        "card_number": "#095",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b20704-N5pntGOae3F4.jpg",
                         "card_color": "RED",
                         "cost": 50,
-                        "card_count": 2
+                        "card_count": 8
                     },
                     {
-                        "card_name": "Tanjirou Kamado",
-                        "card_number": "#082",
-                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Smoliv",
-                        "card_number": "#010",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Applin",
-                        "card_number": "#002",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Bjorn",
-                        "card_number": "#094",
-                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19485-GqL2A0NKp3Tf.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "CAT 2",
-                        "card_number": "#053",
-                        "card_url": "https://cdn2.thecatapi.com/images/efr.jpg",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
+                        "card_name": "Geodude",
+                        "card_number": "#004",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
                     },
                     {
                         "card_name": "The sad truth about windows 11...",
@@ -261,129 +431,482 @@
                         "card_count": 1
                     },
                     {
+                        "card_name": "CAT 11",
+                        "card_number": "#062",
+                        "card_url": "https://cdn2.thecatapi.com/images/9r8.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 9
+                    },
+                    {
+                        "card_name": "CAT 4",
+                        "card_number": "#055",
+                        "card_url": "https://cdn2.thecatapi.com/images/ecu.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Me🥶irl",
+                        "card_number": "#030",
+                        "card_url": "https://i.redd.it/e6lga3pf6cbe1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "CAT 0",
+                        "card_number": "#051",
+                        "card_url": "https://cdn2.thecatapi.com/images/d07.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Ari",
+                        "card_number": "#092",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b140357-4RwRiP5fFFhl.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "New year, new recipe.",
+                        "card_number": "#034",
+                        "card_url": "https://i.redd.it/5u2zyd8w8sae1.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 1",
+                        "card_number": "#052",
+                        "card_url": "https://cdn2.thecatapi.com/images/z77nP6EHh.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 3
+                    },
+                    {
+                        "card_name": "Voltorb",
+                        "card_number": "#013",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "CAT 22",
+                        "card_number": "#073",
+                        "card_url": "https://cdn2.thecatapi.com/images/c4i.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "CAT 8",
+                        "card_number": "#059",
+                        "card_url": "https://cdn2.thecatapi.com/images/qsGk4el-D.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "Anyone remember this?",
+                        "card_number": "#032",
+                        "card_url": "https://i.redd.it/qi2jog20w6be1.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Dragalge",
+                        "card_number": "#020",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 11
+                    },
+                    {
+                        "card_name": "Chill bro stop spoiling ",
+                        "card_number": "#043",
+                        "card_url": "https://i.redd.it/ch660d8dl6be1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Giyuu Tomioka",
+                        "card_number": "#083",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b130050-qsLThJs5VIbz.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Ryouta Watari",
+                        "card_number": "#076",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/69405-IpsjziJkHrHj.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "CAT 12",
+                        "card_number": "#063",
+                        "card_url": "https://cdn2.thecatapi.com/images/83CUYAi3g.jpg",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Another one joining the legends in heaven",
+                        "card_number": "#048",
+                        "card_url": "https://i.redd.it/6vaizxhfe8be1.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "CAT 7",
+                        "card_number": "#058",
+                        "card_url": "https://cdn2.thecatapi.com/images/4m5.jpg",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "CAT 21",
+                        "card_number": "#072",
+                        "card_url": "https://cdn2.thecatapi.com/images/bea.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "If that's how it was meant to be then so be it! ",
+                        "card_number": "#044",
+                        "card_url": "https://i.redd.it/clgw4ltk5rae1.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Aegislash-shield",
+                        "card_number": "#016",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 12
+                    },
+                    {
+                        "card_name": "Aron",
+                        "card_number": "#019",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "Tsumiki Fushiguro",
+                        "card_number": "#086",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b193479-aGNRmbU5jNwR.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "CAT 23",
+                        "card_number": "#074",
+                        "card_url": "https://cdn2.thecatapi.com/images/d0c.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Panda",
+                        "card_number": "#088",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137974-9qnK3DPrvLKh.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Maki Zenin",
+                        "card_number": "#087",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b134167-5TCytk45YByD.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "Hannes",
+                        "card_number": "#096",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b46492-5kRaMLDCVD0B.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 9
+                    },
+                    {
+                        "card_name": "CAT 19",
+                        "card_number": "#070",
+                        "card_url": "https://cdn2.thecatapi.com/images/6u4.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Leif Erikson",
+                        "card_number": "#093",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19486-XRzBNqoLb5Le.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Takeshi Aiza",
+                        "card_number": "#079",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/85839-lYYIkvS9I7wS.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "He's a lil' freaky",
+                        "card_number": "#035",
+                        "card_url": "https://i.redd.it/d1id9fdrj8be1.gif",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Franz Kefka",
+                        "card_number": "#100",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b84317-mIg4hGXJKhQt.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "CAT 24",
+                        "card_number": "#075",
+                        "card_url": "https://cdn2.thecatapi.com/images/OOD3VXAQn.jpg",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "Shieldon",
+                        "card_number": "#009",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "Kousei Arima",
+                        "card_number": "#077",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b69407-eyIvpsFPeARS.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "Keiji",
+                        "card_number": "#097",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n71455-Mvk4Pz3tWUuN.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "That's all i need ...",
+                        "card_number": "#031",
+                        "card_url": "https://i.redd.it/ex1p4ppevbbe1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Junpei Yoshino",
+                        "card_number": "#089",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b157214-ROBNoXVEXRNy.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Wigglytuff",
+                        "card_number": "#015",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Moses",
+                        "card_number": "#098",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b84309-ntK7TKP6RkPe.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "Budew",
+                        "card_number": "#008",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "CAT 3",
+                        "card_number": "#054",
+                        "card_url": "https://cdn2.thecatapi.com/images/8b6.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 10
+                    },
+                    {
+                        "card_name": "You should always do what you feel to do",
+                        "card_number": "#026",
+                        "card_url": "https://i.redd.it/6qai7l82yrae1.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "Horsea",
+                        "card_number": "#022",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "CAT 6",
+                        "card_number": "#057",
+                        "card_url": "https://cdn2.thecatapi.com/images/cev.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Masamichi Yaga",
+                        "card_number": "#090",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 6
+                    },
+                    {
+                        "card_name": "CAT 15",
+                        "card_number": "#066",
+                        "card_url": "https://cdn2.thecatapi.com/images/24t.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "The art of pleasing is a bit fishy.",
+                        "card_number": "#042",
+                        "card_url": "https://i.redd.it/byql02yhpcbe1.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 8
+                    },
+                    {
+                        "card_name": "I believe i can fly",
+                        "card_number": "#033",
+                        "card_url": "https://i.redd.it/ebmxdae538be1.gif",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Kyogre",
+                        "card_number": "#024",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Tinkaton",
+                        "card_number": "#025",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 3
+                    },
+                    {
+                        "card_name": "CAT 9",
+                        "card_number": "#060",
+                        "card_url": "https://cdn2.thecatapi.com/images/BjTEe8vY2.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "Cursola",
+                        "card_number": "#011",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 3
+                    },
+                    {
+                        "card_name": "\"you bring dishonor to my name!\"",
+                        "card_number": "#041",
+                        "card_url": "https://i.redd.it/wbfd1cseh4be1.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 5
+                    },
+                    {
+                        "card_name": "Illumise",
+                        "card_number": "#018",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 4
+                    },
+                    {
+                        "card_name": "CAT 14",
+                        "card_number": "#065",
+                        "card_url": "https://cdn2.thecatapi.com/images/7pu.gif",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 7
+                    },
+                    {
+                        "card_name": "Proudly made with paint",
+                        "card_number": "#047",
+                        "card_url": "https://i.redd.it/m0v5lz7f9cbe1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "There is no wrong answer",
+                        "card_number": "#039",
+                        "card_url": "https://i.redd.it/54fac8uymbbe1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 2
+                    },
+                    {
                         "card_name": "Gyoumei Himejima",
                         "card_number": "#084",
                         "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b137778-H4Uzb9cSCvZ6.jpg",
                         "card_color": "GREEN",
                         "cost": 750,
-                        "card_count": 2
-                    },
-                    {
-                        "card_name": "Quaxly",
-                        "card_number": "#006",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
-                        "card_color": "PURPLE",
-                        "cost": 500,
-                        "card_count": 2
-                    },
-                    {
-                        "card_name": "Darmanitan-standard",
-                        "card_number": "#017",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
-                        "card_color": "GREEN",
-                        "cost": 750,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Golem",
-                        "card_number": "#005",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
-                        "card_color": "RAINBOW",
-                        "cost": 1000,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "You see nothing",
-                        "card_number": "#049",
-                        "card_url": "https://i.redd.it/ip0z03zf13be1.png",
-                        "card_color": "RAINBOW",
-                        "cost": 1000,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "CAT 17",
-                        "card_number": "#068",
-                        "card_url": "https://cdn2.thecatapi.com/images/5kc.png",
-                        "card_color": "GREEN",
-                        "cost": 750,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Kind of a real question",
-                        "card_number": "#046",
-                        "card_url": "https://i.redd.it/hzyjifahb7be1.gif",
-                        "card_color": "RED",
-                        "cost": 50,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Dank means thanks in deutsche",
-                        "card_number": "#028",
-                        "card_url": "https://i.redd.it/ao5blp1521be1.png",
-                        "card_color": "RED",
-                        "cost": 50,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Gelgar",
-                        "card_number": "#099",
-                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n72511-jDEdtgvMh5wM.jpg",
-                        "card_color": "PURPLE",
-                        "cost": 500,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "That's not how it was supposed to go",
-                        "card_number": "#027",
-                        "card_url": "https://i.redd.it/1r47rt12myae1.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Mantyke",
-                        "card_number": "#003",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
-                        "card_color": "RED",
-                        "cost": 50,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Braviary",
-                        "card_number": "#021",
-                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
-                        "card_color": "RED",
-                        "cost": 50,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "CAT 13",
-                        "card_number": "#064",
-                        "card_url": "https://cdn2.thecatapi.com/images/MTc5MzIwNQ.jpg",
-                        "card_color": "PURPLE",
-                        "cost": 500,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "CAT 5",
-                        "card_number": "#056",
-                        "card_url": "https://cdn2.thecatapi.com/images/CDhOtM-Ig.jpg",
-                        "card_color": "BLUE",
-                        "cost": 250,
-                        "card_count": 1
-                    },
-                    {
-                        "card_name": "Switchin' it up",
-                        "card_number": "#037",
-                        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
-                        "card_color": "BLUE",
-                        "cost": 250,
                         "card_count": 1
                     }
                 ],
-                "cards_count": 52,
-                "level": 1,
-                "currency": 931887
+                "cards_count": 735,
+                "experience": 158,
+                "level": 30,
+                "currency": 876929
             }
         ],
         "cards": [
@@ -397,28 +920,7 @@
         ]
     },
     "971733136859881534": {
-        "playlist": [
-            {
-                "song_name": "Adele - Hello (Official Music Video)",
-                "artist_name": "Adele",
-                "url": "https://rr2---sn-8vq54voxn25po-cpvs.googlevideo.com/videoplayback?expire=1736123617&ei=gdB6Z6yBNKSJvdIPhPvzoAE&ip=77.227.186.196&id=o-AOPZlDkCsWAg53zSynWqCXrN6FweDkY_CzWQ8evoRxWq&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1736102017%2C&mh=f5&mm=31%2C29&mn=sn-8vq54voxn25po-cpvs%2Csn-h5q7knes&ms=au%2Crdu&mv=m&mvi=2&pl=24&rms=au%2Cau&initcwndbps=3858750&bui=AfMhrI-cVw1uPgYQFGKKqbLCdBH762o1YkD8JaCe4VULxMgoVzOlZU8TrzSIkCjMUtVC-zP4_0iaDiiM&spc=x-caUCLllOdFjOfsFj-K6bhvBg1tTaGATEpl00SbqW9lgwDKABM5&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=5846920&dur=366.861&lmt=1729729709273468&mt=1736101487&fvip=1&keepalive=yes&fexp=51326932%2C51335594%2C51371294&c=IOS&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgYAI_fqnk6RKH62VbGAClqvCgEqvSNYs33duKVM-nn_gCIQD8ErYN2vFi11JBiD7jE8HeK7vVCm_-NdY5W-DzaLQ-2A%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=AGluJ3MwRQIgBsBPuWPCWEWYogzul5iT_8EpuPRt54Mcywh5xdBULbUCIQCFwkHSpcRYliaOjpQ7C5n0mQIci-BqhemjcxA8wUZsqA%3D%3D"
-            },
-            {
-                "song_name": "Adele - Hello (Official Music Video)",
-                "artist_name": "Adele",
-                "url": "https://rr2---sn-8vq54voxn25po-cpvs.googlevideo.com/videoplayback?expire=1736123649&ei=odB6Z7K6M9T4xN8P6quTsAE&ip=77.227.186.196&id=o-AFp2qis1W6U1tdojl37prQ_QkBmAjVfj2vaN65FxUxtf&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1736102049%2C&mh=f5&mm=31%2C29&mn=sn-8vq54voxn25po-cpvs%2Csn-h5q7knes&ms=au%2Crdu&mv=m&mvi=2&pl=24&rms=au%2Cau&initcwndbps=4206250&bui=AfMhrI9lG0g-TkBgzmnQkwhACwEn-bEhTsJh4g3uEwwhM5jcQmFtVdYuLMduyWv_a-vPhhLHzsYTPYF8&spc=x-caUL6oxD0laT1C_GNXNiGCiBdLlP8HnuhkEemmWXxBrREgC3qP&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=5846920&dur=366.861&lmt=1729729709273468&mt=1736101725&fvip=1&keepalive=yes&fexp=51326932%2C51335594%2C51371294&c=IOS&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgTFYZCHkPB1oCKVcYAyYuPS8nPHTP7ne82qMymQtG5vYCIHqs_1OPJZnhe9wrmJqUiNNSvPgffJmnmkQ7kG0VntZK&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=AGluJ3MwRgIhAMvs9XKvH9KNbNoW1VS987i-oMlBgUEyWC-MN89g6w6iAiEA52IG72SeFW1JjnyCyeuY_0Vxg8pw6MhIX-sNFt8DUSw%3D"
-            },
-            {
-                "song_name": "Dalex - Hola Remix ft. Lenny Tavárez, Chencho Corleone, Juhn \"El All Star\" (Video Lírico Oficial)",
-                "artist_name": "Dalex",
-                "url": "https://rr1---sn-8vq54voxn25po-cpvs.googlevideo.com/videoplayback?expire=1736123724&ei=7NB6Z-TjMqaLvdIPqYjo2Ac&ip=77.227.186.196&id=o-AOQCj96bBi78tglvbz-Eew4dPdE4yPIvvxvtYfM505CB&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1736102124%2C&mh=m0&mm=31%2C29&mn=sn-8vq54voxn25po-cpvs%2Csn-h5q7knel&ms=au%2Crdu&mv=m&mvi=1&pl=24&rms=au%2Cau&initcwndbps=4206250&bui=AfMhrI8Jhf_FEYr2hSgIabE9Z8ivwl-aOmEq-U--qdX17GprmQc5Vgpbo9IbnbYTJPlbFTGXvY7oxjYO&spc=x-caUKAVAONtPxje0WaTlTCWRwNur0TgAV7AyjX-2tzZVdUqc3w1&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4518312&dur=251.581&lmt=1714845873887973&mt=1736101725&fvip=5&keepalive=yes&fexp=51326932%2C51335594%2C51371294&c=IOS&txp=4502434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRgIhALR_8KhxflFJbIf2ssHocHFwWIgXtOQCFv7k0TU59fyzAiEAkFISPmFenmvCMkVYhdF_yicM52N1PYfHi3Cg2BgvzpQ%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=AGluJ3MwRAIgKsFUn50VnnmBNHSHdbCdzZr3ZtVHI8QEKxphvmpmG3UCIELFeK2IJ8Q0EH_3GWsbZCAv4e4pKXKOSo2oEtdwgxEV"
-            },
-            {
-                "song_name": "Dalex - Hola Remix ft. Lenny Tavárez, Chencho Corleone, Juhn \"El All Star\" (Video Lírico Oficial)",
-                "artist_name": "Dalex",
-                "url": "https://rr1---sn-8vq54voxn25po-cpvs.googlevideo.com/videoplayback?expire=1736123750&ei=BtF6Z--jH5_7xN8P5eaziQE&ip=77.227.186.196&id=o-AKD7eeSeI9WLK3eIddklC-bsy76C5_gO52eYFu3iPmxP&itag=251&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1736102150%2C&mh=m0&mm=31%2C29&mn=sn-8vq54voxn25po-cpvs%2Csn-h5qzened&ms=au%2Crdu&mv=m&mvi=1&pl=24&rms=au%2Cau&initcwndbps=4206250&bui=AfMhrI9J3CZhrzxjJ1UrQWQoxPB2r2IWTW7kUsF7sLeRFHcxwgpCzANze50SVCeuQBaLP9YUoZzhqduS&spc=x-caUFZ_nf901AR712u7aH_dKfL8wbb4DBBvuHrhWhkIpWKxkyWH&vprv=1&svpuc=1&mime=audio%2Fwebm&rqh=1&gir=yes&clen=4518312&dur=251.581&lmt=1714845873887973&mt=1736101725&fvip=4&keepalive=yes&fexp=51326932%2C51335594%2C51353497%2C51371294&c=IOS&txp=4502434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgWmhos6np4lhP61Ka4EOqeb2WdBiY_8Kdhy68PtS6o3QCIQDk-lxMo0ZBIsI4VqudZn7pZeGlj0oNTBUBaa802IeEaA%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=AGluJ3MwRAIgIE1Ezbg1dPjaKqgXOf_dNJSBF9mVs-ZdIPIe626wzBwCICpd5fy5QX2DZbjg4L1y7o2ZBwFkXFdU3njB0LWVXozS"
-            }
-        ],
+        "playlist": [],
         "users": [
             {
                 "id": "ID",
@@ -441,393 +943,449 @@
                     }
                 ],
                 "cards_count": 823748,
-                "level": 320938,
-                "currency": 134084
+                "level": 320945,
+                "currency": 136446,
+                "experience": 69
             },
             {
                 "id": 1316886745383702558,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 1097
-            },
-            {
-                "id": 457544339552337932,
-                "cards": [],
-                "cards_count": 0,
-                "level": 1,
-                "currency": 1097
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 1116096783249059960,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 1012408344524361771,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 989878741515776000,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 916535011606425670,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 877955033688326224,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 819581936334929950,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 759039783904739361,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 753757670888177795,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 751532522873159732,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 734155860095533096,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 731992675355721779,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 722745357599113216,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 713032523445174384,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 709800524106694697,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 707608635198406696,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 704377955194765443,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 689101769061433349,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 686301734544474154,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 684773505157431347,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 670613331974946816,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 616395795486474310,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 616395674023362567,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 614109280508968980,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 612752778804330517,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 610223879167803413,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 602592274114936832,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 596737151555600409,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 588335878074531840,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 582621860970233860,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 582203090275532820,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 573223188218118145,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 572076188508487693,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 555108718484914207,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 541337654785081364,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 532276355685941248,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 530913461580857354,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 528151255563108352,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 491948146163843074,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 485099229417570304,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 479668520007761941,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 464022292482097154,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 458250479865167884,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
+            },
+            {
+                "id": 457544339552337932,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 451379187031343104,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 420650126814740481,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 389530491021295636,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 386433730375450624,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 375805687529209857,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 346363595468308500,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 335510004251492353,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 263475190283894784,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 247152326832291840,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 185476724627210241,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             },
             {
                 "id": 143319879032897536,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 53
+                "experience": 158,
+                "level": 30,
+                "currency": 952
             }
         ],
         "cards": [
@@ -885,22 +1443,186 @@
                     }
                 ],
                 "cards_count": 823748,
-                "level": 320938,
-                "currency": 134084
+                "level": 320945,
+                "currency": 136446,
+                "experience": 69
             },
             {
                 "id": 1316886745383702558,
                 "cards": [],
                 "cards_count": 0,
-                "level": 1,
-                "currency": 1097
+                "level": 30,
+                "currency": 3459,
+                "experience": 158
             },
             {
                 "id": 457544339552337932,
-                "cards": [],
-                "cards_count": 0,
-                "level": 1,
-                "currency": 1097
+                "cards": [
+                    {
+                        "card_name": "Leif Erikson",
+                        "card_number": "#093",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b19486-XRzBNqoLb5Le.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Steenee",
+                        "card_number": "#014",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 4",
+                        "card_number": "#055",
+                        "card_url": "https://cdn2.thecatapi.com/images/ecu.jpg",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 17",
+                        "card_number": "#068",
+                        "card_url": "https://cdn2.thecatapi.com/images/5kc.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "CAT 11",
+                        "card_number": "#062",
+                        "card_url": "https://cdn2.thecatapi.com/images/9r8.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "Moses",
+                        "card_number": "#098",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b84309-ntK7TKP6RkPe.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Keiji",
+                        "card_number": "#097",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n71455-Mvk4Pz3tWUuN.jpg",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "There is no wrong answer",
+                        "card_number": "#039",
+                        "card_url": "https://i.redd.it/54fac8uymbbe1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Aron",
+                        "card_number": "#019",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 2
+                    },
+                    {
+                        "card_name": "CAT 6",
+                        "card_number": "#057",
+                        "card_url": "https://cdn2.thecatapi.com/images/cev.jpg",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Gelgar",
+                        "card_number": "#099",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/n72511-jDEdtgvMh5wM.jpg",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Cursola",
+                        "card_number": "#011",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Pidove",
+                        "card_number": "#001",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Tinkaton",
+                        "card_number": "#025",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "That's all i need ...",
+                        "card_number": "#031",
+                        "card_url": "https://i.redd.it/ex1p4ppevbbe1.png",
+                        "card_color": "RAINBOW",
+                        "cost": 1000,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Legends say that he still has three wishes to this day...",
+                        "card_number": "#050",
+                        "card_url": "https://i.redd.it/ar42jg3rb9be1.png",
+                        "card_color": "GREEN",
+                        "cost": 750,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "The sad truth about windows 11...",
+                        "card_number": "#045",
+                        "card_url": "https://i.redd.it/lcjnr272u4be1.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Zenitsu Agatsuma",
+                        "card_number": "#081",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b129131-FZrQ7lSlxmEr.png",
+                        "card_color": "PURPLE",
+                        "cost": 500,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Tanjirou Kamado",
+                        "card_number": "#082",
+                        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b126071-BTNEc1nRIv68.png",
+                        "card_color": "BLUE",
+                        "cost": 250,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Dragalge",
+                        "card_number": "#020",
+                        "card_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    }
+                ],
+                "cards_count": 22,
+                "level": 30,
+                "currency": 1459,
+                "experience": 158
             }
         ],
         "cards": [
@@ -910,6 +1632,92 @@
                 "card_url": "URL",
                 "card_color": " COLOR ( CONSTANT ) ",
                 "cost": "COST"
+            }
+        ]
+    },
+    "1285119833737789501": {
+        "users": [
+            {
+                "id": 1316886745383702558,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 102
+            },
+            {
+                "id": 691672815446786088,
+                "cards": [
+                    {
+                        "card_name": "He's a lil' freaky",
+                        "card_number": "#035",
+                        "card_url": "https://i.redd.it/d1id9fdrj8be1.gif",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    }
+                ],
+                "cards_count": 1,
+                "experience": 11,
+                "level": 2,
+                "currency": 52
+            },
+            {
+                "id": 691671774470865026,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 102
+            },
+            {
+                "id": 620297362946129933,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 102
+            },
+            {
+                "id": 533189830444711957,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 102
+            },
+            {
+                "id": 457544339552337932,
+                "cards": [
+                    {
+                        "card_name": "He's a lil' freaky",
+                        "card_number": "#035",
+                        "card_url": "https://i.redd.it/d1id9fdrj8be1.gif",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    },
+                    {
+                        "card_name": "Dank means thanks in deutsche",
+                        "card_number": "#028",
+                        "card_url": "https://i.redd.it/ao5blp1521be1.png",
+                        "card_color": "RED",
+                        "cost": 50,
+                        "card_count": 1
+                    }
+                ],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 2
+            },
+            {
+                "id": 420650126814740481,
+                "cards": [],
+                "cards_count": 0,
+                "experience": 11,
+                "level": 2,
+                "currency": 102
             }
         ]
     }

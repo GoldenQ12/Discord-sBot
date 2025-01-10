@@ -1,29 +1,29 @@
 [
     {
-        "card_name": "CAT 23",
-        "card_number": "#074",
-        "card_url": "https://cdn2.thecatapi.com/images/d0c.jpg",
-        "card_color": "RAINBOW",
-        "cost": 1000
+        "card_name": "He's a lil' freaky",
+        "card_number": "#035",
+        "card_url": "https://i.redd.it/d1id9fdrj8be1.gif",
+        "card_color": "RED",
+        "cost": 50
     },
     {
-        "card_name": "Masamichi Yaga",
-        "card_number": "#090",
-        "card_url": "https://s4.anilist.co/file/anilistcdn/character/large/b189237-ZxNJwVPL8DvW.png",
+        "card_name": "Dank means thanks in deutsche",
+        "card_number": "#028",
+        "card_url": "https://i.redd.it/ao5blp1521be1.png",
+        "card_color": "RED",
+        "cost": 50
+    },
+    {
+        "card_name": "CAT 20",
+        "card_number": "#071",
+        "card_url": "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
         "card_color": "BLUE",
         "cost": 250
     },
     {
-        "card_name": "CAT 11",
-        "card_number": "#062",
-        "card_url": "https://cdn2.thecatapi.com/images/9r8.jpg",
-        "card_color": "BLUE",
-        "cost": 250
-    },
-    {
-        "card_name": "Switchin' it up",
-        "card_number": "#037",
-        "card_url": "https://i.redd.it/12xq9hcorabe1.png",
+        "card_name": "Getting around censorship (cajun style)",
+        "card_number": "#040",
+        "card_url": "https://i.redd.it/aminnxpukabe1.png",
         "card_color": "BLUE",
         "cost": 250
     }

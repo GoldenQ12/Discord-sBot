@@ -5,7 +5,6 @@ import requests
 
 from typing import Dict, Any
 from dotenv import load_dotenv
-from bs4 import BeautifulSoup  # Add this import
 
 
 class ExternalDefs():

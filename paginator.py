@@ -31,7 +31,8 @@ class Paginator:
         end = start + self.items_per_page
         user_card_names = [card['card_name'] for card in self.user_cards]
         user_card_count = {card['card_name']: card['card_count'] for card in self.user_cards}  # Create a dictionary for easy access
-        card_embed = discord.Embed(title=f"Card List\nTotal Cards: x{sum(user_card_count.values())}", colour=discord.Colour.brand_green())
+        card_embed = discord.Embed(title=f"Mis cartas\nCartas: x{sum(user_card_count.values())}", colour=discord.Colour.brand_green())
+
 
 
         field_count = 0  # Initialize a counter for the number of fields
@@ -72,13 +73,13 @@ class Paginator:
             if card['card_url'] == "???":
                 card_embed.add_field(
                     name=f"{card['card_name']} - {card['card_number']}",
-                    value=f"Cost: {card['cost']} coins",
+                    value=f"{card['cost']}🪙",
                     inline=True
                 )
             else:
                 card_embed.add_field(
                     name=f"{card['card_name']} - {card['card_number']}",
-                    value=f"Cost: {card['cost']} coins\n[View Card]({card['card_url']})\nx{card['card_count']}",
+                    value=f"{card['cost']}🪙\n[View Card]({card['card_url']})\nx{card['card_count']}",
                     inline=True
                 )
             
@@ -86,26 +87,25 @@ class Paginator:
 
     def get_view(self):
         view = discord.ui.View()
+        
+        # Create buttons for each page
+        for page_num in range(self.total_pages):
+            # Create button with page number
+            button = discord.ui.Button(
+                label=str(page_num + 1),  # Page numbers start from 1
+                style=discord.ButtonStyle.primary if page_num != self.current_page else discord.ButtonStyle.success,
+                custom_id=f"page_{page_num}"
+            )
+            
+            # Define callback for this specific page
+            async def button_callback(interaction, page=page_num):
+                self.current_page = page
+                await self.update(interaction)
+            
+            button.callback = button_callback
+            view.add_item(button)
 
-        async def previous_callback(interaction):
-            self.current_page -= 1
-            await self.update(interaction)
-
-        async def next_callback(interaction):
-            self.current_page += 1
-            await self.update(interaction)
-
-        if self.current_page > 0:
-            previous_button = discord.ui.Button(label="Previous", style=discord.ButtonStyle.primary, custom_id="previous")
-            previous_button.callback = previous_callback  # Set the callback for the previous button
-            view.add_item(previous_button)
-
-        if self.current_page < self.total_pages - 1:
-            next_button = discord.ui.Button(label="Next", style=discord.ButtonStyle.primary, custom_id="next")
-            next_button.callback = next_callback  # Set the callback for the next button
-            view.add_item(next_button)
-
-        return view  # Ensure the view is returned
+        return view
 
     async def update(self, interaction):
         embed = self.get_embed()
